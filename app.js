@@ -1,1 +1,5 @@
-console.log('Hello world!!!');
+// compile using: tsc app.ts
+var add = function (num1, num2) {
+    return num1 + num2;
+};
+console.log(add(5, 2.8));
