@@ -1,5 +1,11 @@
 // compile using: tsc app.ts
-var add = function (num1, num2) {
-    return num1 + num2;
+var add = function (num1, num2, showResult, phrase) {
+    var results = num1 + num2;
+    if (showResult) {
+        console.log(phrase + results);
+    }
+    else {
+        return results;
+    }
 };
-console.log(add(5, 2.8));
+add(5, 2.8, true, 'Result is: ');
